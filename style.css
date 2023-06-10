@@ -51,4 +51,26 @@ nav ul li a:hover {
     margin-left: 10px;
 }
 
+/* accueil */
+.hero {
+width: 100%;
+height: 500px;
+background-image: url(/img/hero.jpg);
+background-size: cover;
+background-position: center;
+}
+.hero h1 {
+  font-size: min(47px, 6vw);
+  text-align: center;
+  color: #f2f2f2;
+  margin-bottom: 40px;
+}
+.hero p {
+  font-size: min(33px, 4vw);
+  text-align: center;
+  color: #f2f2f2;
+  margin-top: 20px;
+  width: auto;
+}
+
 
