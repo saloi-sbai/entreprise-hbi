@@ -1,11 +1,11 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-/* body {
-    font-family: 'Roboto', sans-serif;
-} */
+body {
+  font-family: "Roboto", sans-serif;
+}
 
 /* navigation */
 nav {
@@ -30,7 +30,7 @@ nav ul li a {
   display: block;
   padding: 10px 20px;
   text-decoration: none;
-  color: #fffAE1;
+  color: #fffae1;
 }
 
 nav ul li a:hover {
@@ -38,43 +38,77 @@ nav ul li a:hover {
 }
 /* logo */
 .logo {
-    width: 50%;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    
+  width: 50%;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 .logo img {
-    width: 75px;
-    height: 31px;
-    border-radius: 5px;
-    float: left;
-    margin-left: 10px;
+  width: 75px;
+  height: 31px;
+  border-radius: 5px;
+  float: left;
+  margin-left: 10px;
 }
 
 /* accueil */
 .hero {
-width: 100%;
-height: 500px;
-background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url(/img/hero.jpg);
-background-size: cover;
-background-position: center;
+  width: 100%;
+  height: 500px;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(/img/hero-1.jpg);
+  background-size: cover;
+  background-position: center;
 }
 .hero h1 {
   font-size: min(47px, 6vw);
   text-align: center;
-  color: #fffAE1;
+  color: #fffae1;
   margin-bottom: 40px;
   padding-top: 60px;
 }
 .hero p {
   font-size: min(33px, 4vw);
   text-align: center;
-  color: #fffAE1;
+  color: #fffae1;
   margin-top: 20px;
   width: auto;
   padding-top: 40px;
 }
+
+/* page dépannage cards */
+.section-center {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  width: 90vw;
+  margin: 0 auto;
+}
+.service-card {
+  margin: 2rem 0;
+  border-radius: 0.5rem;
+  background: #f1f5f8;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s linear;
+}
+.service-card:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  transform: scale(1.02);
+}
+.service-info {
+  text-align: center;
+  padding: 3rem 1rem 2.5rem 1rem;
+  color: #343a40;
+}
+.service-info h4 {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+.service-info p {
+  max-width: 20rem;
+  color: #617d98;
+  margin: 0 auto;
+}
+
 /* dépannage conseil et formation */
 .section-title {
   text-align: center;
@@ -112,51 +146,82 @@ background-position: center;
   margin-bottom: 30px;
   padding-right: 20px;
   color: #617d98;
-  
 }
 
 /* footer */
-footer {
-    background-color: #524a3a;
-    color: #fffAE1;
-    padding: 20px 0 10px 0;
-    text-align: center;
+.contact {
+  background-color: #524a3a;
+  color: #fffae1;
+  padding: 20px 0 10px 0;
+  text-align: center;
+}
+
+.infos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contact-info {
+  margin-top: 40px;
+  padding-left: 40px;
+}
+.contact-item {
+  margin: 1rem;
+  margin-bottom: 1.75rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.contact-title {
+  font-weight: 700;
+}
+
+.fa-solid {
+  font-size: 28px;
+  margin: 10px;
+}
+.contact-item p {
+  font-weight: bold;
 }
 form {
-   margin: 0 auto; 
-   max-width: 900px;
+  margin: 0 auto;
+  max-width: 900px;
 }
-input, textarea, button {
-    border: none;
-    width: 55%;
-    padding: 15px 10px;
-    margin: 1px 0;
-    font-size: 1.2em;
-    font-family: 'Advent pro', sans-serif;
-    border-radius: 8px;
+input,
+textarea,
+button {
+  border: none;
+  width: 55%;
+  padding: 15px 10px;
+  margin: 1px 0;
+  font-size: 1.2em;
+  font-family: "Advent pro", sans-serif;
+  border-radius: 8px;
 }
 textarea {
-    height: 120px;
+  height: 120px;
 }
 button {
-    font-size: 1.5em;
-    background-color: #fffAE1;
+  font-size: 1.5em;
+  background-color: #fffae1;
 }
 button:hover {
-    background-color: #e07a5f;
-    color: #fffAE1;
-    cursor: pointer;
-    transition: 0.3s ease-in-out;
+  background-color: #e07a5f;
+  color: #fffae1;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
 }
 #deuxiemeTrait {
-    height: 1px;
-    width: 75%;
-    background-color: #fffAE1;
-    margin: 60px auto; 
+  height: 1px;
+  width: 80%;
+  background-color: #fffae1;
+  margin: 60px auto;
 }
 
 #copyright {
-    /* width: 50%; */
-    text-align: center;
-    color: #fffAE1; 
+  /* width: 50%;*/
+  text-align: center;
+  color: #fffae1;
 }
