@@ -167,7 +167,7 @@ nav ul li a:hover {
 .services-title-formule h3 {
   color: #355070;
 }
-.section-center{
+.section-center {
   display: flex;
   justify-content: space-around;
   gap: 1rem;
@@ -228,9 +228,47 @@ nav ul li a:hover {
   font-size: 2rem;
   text-align: center;
 }
+.prest-title {
+  color: #355070;
+}
+.prest-description {
+  color: #617d98;
+  letter-spacing: 1px;
+  font-weight: 300;
+}
+.mo-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.mo {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  /* background-color: #f1f5f8; */
+  margin-bottom: 2rem;
+}
 
+.dep {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+.prestations {
+  width: 70%;
+}
 
+.fa-solid {
+  zoom: 2;
+  padding-right: 2rem;
+}
+.price-depannage {
+  font-size: 2rem;
+  padding-left: 3rem;
+  color: #ee6c4d;
+}
 /* footer */
 .contact {
   background-color: #14213d;
