@@ -36,6 +36,9 @@ nav ul li a {
 nav ul li a:hover {
   background-color: #ddd;
 }
+.toggle {
+  display: none;
+}
 /* --------------------------- logo ------------------*/
 .logo {
   width: 50%;
@@ -49,6 +52,79 @@ nav ul li a:hover {
   float: left;
   margin-left: 10px;
 }
+a:hover {
+  color: #e76f51;
+}
+.active {
+  color: #e76f51;
+  font-weight: 400;
+}
+/* ------------------- nav mobile --------------------- */
+
+@media screen and (max-width: 935px) {
+  nav {
+    display: flex;
+    align-items: stretch;
+  }
+  .menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+    display: none;
+  }
+  .menu li {
+    font-size: 1rem;
+    padding: 15px 5px;
+  }
+  .menu li a {
+    display: block;
+    font-size: 20px;
+  }
+  .item {
+    width: 100%;
+    text-align: left;
+    display: inline-block;
+  }
+  .item.active {
+    display: block;
+  }
+  .toggle {
+    display: block;
+  }
+  /* ---------------------- menu burger ------------------ */
+.burger {
+  display: inline-block;
+  background: black;
+  height: 2px;
+  position: relative;
+  width: 18px;
+  left: -30px;
+}
+.burger::before,
+.burger::after {
+  display: inline-block;
+  background: black;
+  height: 2px;
+  position: absolute;
+  width: 18px;
+  /* left: -15px; */
+  content: "";
+}
+.burger::before {
+  top: 5px;
+  
+}
+.burger::after {
+  top: -5px;
+}
+.show-menu {
+  display: block;
+}
+
+}
+
+
 
 /* ---------------------- accueil ----------------------*/
 .hero {
@@ -261,7 +337,7 @@ nav ul li a:hover {
   width: 70%;
 }
 
-.fa-solid {
+.icons {
   zoom: 2;
   padding-right: 2rem;
 }
@@ -315,7 +391,7 @@ form {
 input,
 textarea,
 button {
-  border: none;
+  border: solid;
   width: 55%;
   padding: 15px 10px;
   margin: 1px 0;
